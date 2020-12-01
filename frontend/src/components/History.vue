@@ -23,29 +23,29 @@
 </template>
 
 <script>
-// import { getAllHistory } from '../services/HistoryService'
+import { getAllHistory } from '../services/HistoryService'
 import { getUser } from '../services/UserService'
 export default {
   name: 'History',
   props: {
   },
   data : function(){
-    // let history = await getAllHistory(getUser())
-    let history = [{
-        P:12,
-        r:12,
-        n:12,
-        mortgage:144,
-        userid:getUser()
-    },
-    {
-        P:124,
-        r:124,
-        n:1,
-        mortgage:124,
-        userid:getUser()
-    }
-    ]
+    let history = getAllHistory(getUser())
+    // let history = [{
+    //     P:12,
+    //     r:12,
+    //     n:12,
+    //     mortgage:144,
+    //     userid:getUser()
+    // },
+    // {
+    //     P:124,
+    //     r:124,
+    //     n:1,
+    //     mortgage:124,
+    //     userid:getUser()
+    // }
+    // ]
     return{
       'history' : history
     }
