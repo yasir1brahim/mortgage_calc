@@ -27,7 +27,8 @@
 </template>
 
 <script>
-
+import { createHistory } from '../services/HistoryService'
+import { getUser } from '../services/UserService'
 export default {
   name: 'Calculator',
   props: [
@@ -51,6 +52,16 @@ export default {
       let r = this.i_rate
       let n = this.no_of_payments
       this.mortgage = P * (r * (1+r)**n / (((1+r)**n)-1))
+
+      let userid = getUser();
+
+      createHistory({
+        P:P,
+        r:r,
+        n:n,
+        mortgage:this.mortgage,
+        userid:userid
+      })
     }
   }
 }
