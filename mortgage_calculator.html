@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://127.0.0.1:8000/favicon.ico">
+    <title>mortgage_calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="./mortgage_calculator_files/app.js" rel="preload" as="script"><link href="./mortgage_calculator_files/chunk-vendors.js" rel="preload" as="script"><style type="text/css">
+#app {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style><style type="text/css">button.btn[data-v-0a2a5063]{display:inline-block;font-weight:300;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;user-select:none;border:1px solid transparent;cursor:pointer;letter-spacing:1px;transition:all .15s ease}button.btn.btn-sm[data-v-0a2a5063]{padding:.4rem .8rem;font-size:.8rem;border-radius:.2rem}button.btn.btn-primary[data-v-0a2a5063]{color:#fff;background-color:#45C8F1;border-color:#45C8F1}button.btn.btn-outline-primary[data-v-0a2a5063]{color:#45C8F1;background-color:transparent;border-color:#45C8F1}button.btn.btn-danger[data-v-0a2a5063]{color:#fff;background-color:#FF4949;border-color:#FF4949}.text-muted[data-v-0a2a5063]{color:#8492A6}.text-center[data-v-0a2a5063]{text-align:center}.drop-down-enter[data-v-0a2a5063],.drop-down-leave-to[data-v-0a2a5063]{transform:translateX(0) translateY(-20px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.drop-down-enter-active[data-v-0a2a5063],.drop-down-leave-active[data-v-0a2a5063]{transition:all .15s}.move-left-enter[data-v-0a2a5063],.move-left-leave-to[data-v-0a2a5063]{transform:translateY(0) translateX(-80px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.move-left-enter-active[data-v-0a2a5063],.move-left-leave-active[data-v-0a2a5063]{transition:all .15s}.shake[data-v-0a2a5063]{animation:shake-data-v-0a2a5063 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;transform:translate3d(0, 0, 0)}@keyframes shake-data-v-0a2a5063{10%,90%{transform:translate3d(-1px, 0, 0)}20%,80%{transform:translate3d(2px, 0, 0)}30%,50%,70%{transform:translate3d(-4px, 0, 0)}40%,60%{transform:translate3d(4px, 0, 0)}}.pulse[data-v-0a2a5063]{animation:pulse-data-v-0a2a5063 2s ease infinite}@keyframes pulse-data-v-0a2a5063{0%{opacity:.7}50%{opacity:.4}100%{opacity:.7}}.flash-once[data-v-0a2a5063]{animation:flash-once 3.5s ease 1}@keyframes fade-up-data-v-0a2a5063{0%{transform:translate3d(0, 10px, 0);opacity:0}100%{transform:translate3d(0, 0, 0);opacity:1}}.fade-in[data-v-0a2a5063]{animation:fade-in-data-v-0a2a5063 .3s ease-in-out}@keyframes fade-in-data-v-0a2a5063{0%{opacity:0}100%{opacity:1}}.spin[data-v-0a2a5063]{animation-name:spin-data-v-0a2a5063;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes spin-data-v-0a2a5063{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.bounceIn[data-v-0a2a5063]{animation-name:bounceIn-data-v-0a2a5063;transform-origin:center bottom;animation-duration:1s;animation-fill-mode:both;animation-iteration-count:1}@keyframes bounceIn-data-v-0a2a5063{0%,20%,40%,60%,80%,100%{-webkit-transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:1;-webkit-transform:scale3d(0.8, 0.8, 0.8);transform:scale3d(0.8, 0.8, 0.8)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(0.9, 0.9, 0.9);transform:scale3d(0.9, 0.9, 0.9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(0.97, 0.97, 0.97);transform:scale3d(0.97, 0.97, 0.97)}100%{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@keyframes dots-data-v-0a2a5063{0%,20%{color:rgba(0,0,0,0);text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}40%{color:#8492A6;text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}60%{text-shadow:0.25em 0 0 #8492A6,0.5em 0 0 rgba(0,0,0,0)}80%,100%{text-shadow:.25em 0 0 #8492A6, .5em 0 0 #8492A6}}@keyframes recording-data-v-0a2a5063{0%{box-shadow:0px 0px 5px 0px rgba(173,0,0,0.3)}65%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0.3)}90%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0)}}html[data-v-0a2a5063]{max-height:500px}body[data-v-0a2a5063]{margin:0;font-size:100%;color:#3C4858;width:350px;max-height:500px}a[data-v-0a2a5063]{text-decoration:none;color:#45C8F1}h1[data-v-0a2a5063],h2[data-v-0a2a5063],h3[data-v-0a2a5063],h4[data-v-0a2a5063]{margin-top:0}.container_selected_area[data-v-0a2a5063]{padding:0px;position:fixed;z-index:2147483647;top:0px;left:0px;right:0px;bottom:0px;display:none;visibility:hidden}.container_selected_area.active[data-v-0a2a5063]{visibility:visible;display:block}.container_selected_area .label[data-v-0a2a5063]{font-family:"Didact Gothic Regular",sans-serif;font-size:22px;text-align:center;padding-top:15px}.container_selected_area .area[data-v-0a2a5063]{border:1px solid #1e83ff;background:rgba(30,131,255,0.1);display:none;position:fixed;z-index:2147483647;box-sizing:border-box}.container_selected_area .area.active[data-v-0a2a5063]{display:block;top:0px;left:0px}.hide[data-v-0a2a5063]{display:none}
+</style>
+</head>
+  <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="" class="min-h-screen bg-gray-100">
+   <noscript>
+      <strong>We're sorry but mortgage_calculator doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+   </noscript>
+   <div id="content-wrapper" class="mx-auto max-w-6xl ">
+   <div id="app" data-v-app="" class="flex flex-col md:flex-row">
+      <div class="calculator md:w-1/3" data-v-e835979c="">
+         <div class="form-container  justify-between pt-4 pb-8 sm:mr-0 md:mr-4 px-4 bg-white shadow-2xl rounded-lg mx-auto text-center " data-v-e835979c="">
+          <h2 class="text-center font-normal text-3xl font-bold font-medium leading-loose my-3 w-full">Calculator</h2>
+            <div class="input-container max-w-sm mx-auto flex mt-4" data-v-e835979c=""><label data-v-e835979c="" class="flex-1 p-1 mr-2 text-left">principle loan amount</label><input type="number" data-v-e835979c=""c class="border rounded shadow pl-2"></div>
+
+            <div class="input-container max-w-sm mx-auto flex mt-4" data-v-e835979c=""><label data-v-e835979c="" class="flex-1 p-1 mr-2 text-left">no of payments</label>
+              <input type="number" data-v-e835979c="" class="border rounded shadow pl-2"></div>
+
+            <div class="input-container max-w-sm mx-auto flex mt-4" data-v-e835979c=""><label data-v-e835979c="" class="flex-1 p-1 mr-2 text-left">interest rate</label>
+              <input type="number" data-v-e835979c="" class="border rounded shadow pl-2" ></div>
+
+            <div class="input-container max-w-sm mx-auto flex mt-4" data-v-e835979c=""><button data-v-e835979c="" class="bg-blue-600 text-white text-base font-semibold rounded-md shadow-md hover:bg-indigo-600 p-3 my-3 w-full">Calculate</button></div>
+         </div>
+      </div>
+      <div class="history border md:w-2/3 rounded" data-v-aa4ea6d8="">
+        <div class="result" data-v-e835979c="">
+            <h1 class="label label text-center font-normal text-3xl font-bold font-medium leading-loose w-full bg-blue-600 text-white" data-v-e835979c="">Mortgage  Calculator</h1>
+            <h1 class="value" data-v-e835979c=""></h1>
+        </div>
+         <h2 data-v-aa4ea6d8="" class="text-center font-normal text-2xl font-regular font-medium leading-loose w-full">History</h2>
+         <table border="1" width="100%" data-v-aa4ea6d8="">
+            <thead data-v-aa4ea6d8="">
+               <tr data-v-aa4ea6d8="" class="border">
+                  <th data-v-aa4ea6d8="" class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Loan Amount</th>
+                  <th data-v-aa4ea6d8="" class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">No Of Payments</th>
+                  <th data-v-aa4ea6d8="" class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Interest Rate</th>
+                  <th data-v-aa4ea6d8="" class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Mortgage</th>
+                  <th data-v-aa4ea6d8="" class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Actions</th>
+               </tr>
+            </thead>
+            <tbody data-v-aa4ea6d8="">
+               <tr data-v-aa4ea6d8="" class="border">
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">8</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">8</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">8</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">64.00000148675672</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static"><button data-v-aa4ea6d8="" class="rounded bg-red-500 py-1 px-3 text-xs font-regular text-white">Delete</button></td>
+               </tr>
+               <tr data-v-aa4ea6d8="" class="border">
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">9</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">9</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">9</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">81.00000008100001</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static"><button data-v-aa4ea6d8="" class="rounded bg-red-500 py-1 px-3 text-xs font-regular text-white">Delete</button></td>
+               </tr>
+               <tr data-v-aa4ea6d8="" class="border">
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">10</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">10</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">10</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">100.00000000385543</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static"><button data-v-aa4ea6d8="" class="rounded bg-red-500 py-1 px-3 text-xs font-regular text-white">Delete</button></td>
+               </tr>
+               <tr data-v-aa4ea6d8="">
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">77</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">77</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">77</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">5929</td>
+                  <td data-v-aa4ea6d8="" class="w-full lg:w-auto p-2 text-gray-800 text-center border border-b block lg:table-cell relative lg:static"><button data-v-aa4ea6d8="" class="rounded bg-red-500 py-1 px-3 text-xs font-regular text-white">Delete</button></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+   </div>
+   <!-- built files will be auto injected -->
+   <script type="text/javascript" src="./mortgage_calculator_files/chunk-vendors.js"></script><script type="text/javascript" src="./mortgage_calculator_files/app.js"></script>
+   <input type="file" id="" name="file" style="display: none;">
+   <div data-v-0a2a5063="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://ialiedlpfknneamnbemcgmaboleiccdd/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;">
+      <div data-v-0a2a5063="" class="area"></div>
+   </div>
+</body>
+</html>
